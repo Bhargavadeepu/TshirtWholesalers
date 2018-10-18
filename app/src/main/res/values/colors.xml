@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--   <color name="colorPrimary">#3F51B5</color>   //  303F9F-->
+    <color name="colorPrimary">#00b300</color>
+    <color name="colorPrimaryDark">#00b300</color>
+    <color name="colorAccent">#66d43d</color>
+    <color name="textcolor">#efefef</color>
+    <color name="white">#ffffff</color>
+    <color name="parrot_green">#00b300</color>
+    <color name="bordercolor">#b3b3b3</color>
+    <color name="blackcolor">#000</color>
+    <color name="headingtxtcolor">#5d5d5d</color>
+    <color name="infotxtcolor">#b3b3b3</color>
+    <color name="labelcolor">#8c8c8c</color>
+    <color name="tab_selected_color">#00b300</color>
+    <color name="tab_unselected_color">#00b300</color>
+    <color name="green">#1b3f0e</color>
+  <!--  <color name="tab_unselected_color">#00214F</color>
+   <color name="tab_selected_color">#8CBCFF</color>
+    <color name="tab_unselected_color">#00214F</color>
+  -->
+    <color name="background">#e6e6e6</color>
+    <color name="buttton_color">#00b300</color>
+    <color name="buttton_cartcolr">#80ff80</color>
+</resources>
+
+
+
+

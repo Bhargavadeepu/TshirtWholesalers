@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="vertical">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relaytive_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".PaymentGateWay.PaypalpaymentActivity"
+        tools:showIn="@layout/activity_paypalpayment">
+
+
+        <LinearLayout
+            android:id="@+id/logo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="300dp"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:src="@drawable/newlogo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1300 155 055"
+                    android:textColor="@color/blackcolor"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email"
+                    android:textColor="@color/blackcolor"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ordersummary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/logo_layout"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_action_cartselected" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Show order summary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:gravity="center|right|end"
+                android:text="$5.55" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ordersummary_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout_background">
+
+            <TextView
+                android:id="@+id/txt_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Contact" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_emialid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_contact"
+                android:layout_marginLeft="16dp"
+                android:text="Loremipsum@abc.com" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/txt_contact"
+                android:gravity="center|end"
+                android:paddingRight="14dp"
+                android:text="@string/chng"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:id="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv_emialid"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/headingtxtcolor"></View>
+
+
+            <TextView
+                android:id="@+id/txt_ship"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_one"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text=" Ship to " />
+
+
+            <TextView
+                android:layout_below="@+id/view_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/txt_ship"
+                android:gravity="center|end"
+                android:paddingRight="14dp"
+                android:text="@string/chng"
+                android:textColor="@color/colorAccent" />
+
+
+            <TextView
+                android:id="@+id/txt_cmpny_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_ship"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text=" Akuna" />
+
+
+            <TextView
+                android:id="@+id/txt_addreessline1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_cmpny_name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text=" Addrss line 1 and line2 " />
+
+
+            <TextView
+                android:id="@+id/tvcitypostalcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_addreessline1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Queens land _5002" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvcitypostalcode"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text="melbourne" />
+
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_state"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Austrlia" />
+
+
+
+            <View
+                android:id="@+id/view_two"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv_country"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/headingtxtcolor"></View>
+
+
+            <TextView
+                android:id="@+id/txt_mthd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_two"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Method" />
+
+            <TextView
+                android:id="@+id/tv_shiipincharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_mthd"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Standard Shipping :$ 11.00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_shiipincharge" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_dicountlbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Gift Card or Discount code"
+            android:textColor="@color/blackcolor" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_dicountlbl"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/layout_background"
+                android:hint="Gift card or discount code"
+                android:paddingLeft="8dp" />
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight=".50"
+                android:background="@drawable/layout_background"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_pymrntmtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_discount"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Payment Method"
+            android:textColor="@color/blackcolor" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pymrntmtd"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="All transactions are secure and encrypted"
+            android:textColor="@color/headingtxtcolor" />
+
+
+        <LinearLayout
+            android:id="@+id/payment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pymrntmtd"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/layout_background"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:onClick="btnpaypal_OnClick"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paypal"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_billingaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_layout"
+            android:layout_marginLeft="16dp"
+            android:text="Billing Address"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/billingaddress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_billingaddress"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout_background">
+
+            <RadioButton
+                android:id="@+id/radio_shiipingaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/txt_shippingaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/radio_shiipingaddress"
+                android:text=" Same as shipping address" />
+
+            <View
+                android:id="@+id/view_three"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/txt_shippingaddress"
+                android:layout_marginTop="25dp"
+                android:background="@color/headingtxtcolor">
+
+            </View>
+
+            <RadioButton
+                android:id="@+id/radio_billingaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_three"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp" />
+
+
+            <TextView
+                android:id="@+id/txt_billingddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_three"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/radio_billingaddress"
+                android:text=" Use different billing address" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_completeorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billingaddress_layout"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ripplebutton"
+            android:text="Complete order"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_returnshippingmthd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_completeorder"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=" Return to shipping method"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view_four"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tv_returnshippingmthd"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/headingtxtcolor">
+
+        </View>
+
+
+        <LinearLayout
+            android:id="@+id/layout_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_four"
+            android:layout_marginBottom="90dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Refund Policy"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:text="Privacy Policy"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:text="Refund Policy"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

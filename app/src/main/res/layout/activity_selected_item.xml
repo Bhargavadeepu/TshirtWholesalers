@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.SelectedItemActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+            <ImageView
+                android:onClick="btnback_OnClick"
+                android:id="@+id/regbackicon"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/txttilte"
+                android:layout_marginTop="5dp"
+                android:layout_weight="15"
+                android:src="@drawable/ic_action_backarrow" />
+
+            <TextView
+                android:id="@+id/txttilte"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/regbackicon"
+                android:layout_weight="25"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/app_title"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_search"
+                android:layout_weight="40"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="30dp">
+
+
+                <ImageView
+                    android:onClick="btnsearch_OnClick"
+                    android:id="@+id/tv_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/txttilte"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/ic_action_search" />
+
+                <TextView
+                    android:visibility="invisible"
+                    android:text="jhjjj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:onClick="btncart_OnClick"
+                    android:id="@+id/tv_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/txttilte"
+                    android:src="@drawable/ic_action_cartselected" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@drawable/circle"
+                    android:id="@+id/tv_cartCount"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:text="5"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_selected_item" />
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akuna.Tshirtwholesalers.Tshirtwholesalers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.SplashActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!--
+                          <intent-filter>
+                          <action android:name="android.intent.action.VIEW" />
+                          <category android:name="android.intent.category.LAUNCHER" />
+                          <category android:name="android.intent.category.DEFAULT" />
+                          <category android:name="android.intent.category.BROWSABLE" />
+
+                          <data
+                              android:host="www.example.com"
+                              android:scheme="abc"
+                               android:pathPrefix="/gizmos" />
+
+                      </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".UserScreens.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UserScreens.CheckoutasGuest" />
+        <activity
+            android:name=".UserScreens.AddAddress"
+            android:label="@string/title_activity_add_address"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.OtherInformation"
+            android:label="@string/title_activity_other_information"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UserScreens.WebviewActivity" />
+        <activity android:name=".UserScreens.ContactUs" />
+        <activity
+            android:name=".UserScreens.MyAddresses"
+            android:label="@string/title_activity_my_addresses"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.ShippingCharge"
+            android:label="@string/title_activity_shipping_charge"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.PaymentMode"
+            android:label="@string/title_activity_payment_mode"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.SelectedItemActivity"
+            android:label="@string/title_activity_selected_item"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.FavouritesList"
+            android:label="@string/title_activity_favourites_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".UserScreens.ZoomImageActivity" />
+        <activity
+            android:name=".UserScreens.ProgrssbarActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".PaymentGateWay.PaypalpaymentActivity"
+            android:label="@string/title_activity_paypalpayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.CreditCardActivity"
+            android:label="@string/title_activity_credit_card"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.LivesearchActivity"
+            android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.MyCartActivity"
+            android:label="@string/title_activity_my_cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.WebCheckoutActivity"
+            android:label="@string/title_activity_web_checkout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.CustomerOrders"
+            android:label="@string/title_activity_customer_orders"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProductListAcitvity"
+            android:label="@string/title_activity_product_list_acitvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.CustomerProfile"
+            android:label="@string/title_activity_customer_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.SubcatogoriesListActivity"
+            android:label="@string/title_activity_subcatogories_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.StatusWebView"
+            android:label="@string/title_activity_status_web_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.AlertpopupAcitivtiy"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".UserScreens.ThankyouActivity"
+            android:label="@string/title_activity_thankyou"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.FavourtieTabActivtiy"
+            android:label="@string/title_activity_favourtie_tab_activtiy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.FavouriteItemsList"
+            android:label="@string/title_activity_favourite_items_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserScreens.SubCategoryProducts"
+            android:label="@string/title_activity_sub_category_products"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

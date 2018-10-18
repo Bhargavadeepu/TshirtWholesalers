@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UserScreens.MyAddresses"
+    tools:showIn="@layout/activity_my_addresses">
+
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/tv_waringtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Currently you have no saved addresses" />
+
+    <TextView
+        android:drawableRight="@drawable/ic_action_rightarrow"
+        android:onClick="txt_addressonClick"
+        android:id="@+id/txt_newaddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_background"
+        android:gravity="center|left"
+        android:paddingLeft="30dp"
+        android:text=" Add New Address" />
+
+    <TextView
+        android:id="@+id/txt_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_newaddress"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/addresstxt"
+        android:textColor="@color/headingtxtcolor" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_order"
+        android:layout_margin="16dp" >
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_address"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="90dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_noaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_newaddress"
+        android:layout_marginTop="350dp"
+        android:gravity="center_horizontal"
+        android:text="Cureenetly you have no saved addresses"
+        android:textColor="@color/headingtxtcolor" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="btn_confirmclick"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ripplebutton"
+            android:text="CONFIRM"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
